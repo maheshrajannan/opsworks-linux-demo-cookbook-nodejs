@@ -1,4 +1,4 @@
-app = search(:aws_opsworks_app).first
+app = search(:aws_opsworks_app2).first
 app_path = "/srv/#{app['shortname']}"
 
 file 'index.php' do
