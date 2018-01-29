@@ -1,6 +1,10 @@
 app = search(:aws_opsworks_app).first
 app_path = "/srv/#{app['shortname']}"
 
+file 'index.php' do
+  content '<html>This is a placeholder for the home page Mahesh Rajannan.</html>'
+end
+
 package "git" do
   # workaround for:
   # WARNING: The following packages cannot be authenticated!
